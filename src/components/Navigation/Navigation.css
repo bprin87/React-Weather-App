@@ -1,0 +1,93 @@
+.nav-container {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    max-height: 100px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    align-self: center;
+    font-family: 'Marvel', sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    width: 10%;
+    margin: 0 auto 0 auto;
+    list-style: none;
+}
+
+.nav-list li {
+    align-self: center;
+    margin-right: 100px;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .075rem;
+    text-shadow: 0 0 25px rgba(255,255,255, 0.5);
+}
+
+.logo, .nav-list li {
+    color: #fff;
+    cursor: pointer;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.mobile-nav-list {
+    display: none;
+}
+
+.mobile-nav-list-hidden {
+    display: none;
+}
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1130px) {
+
+    .mobile-btn {
+        display: block;
+        margin-left: auto;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .nav-list-hidden {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        width: 70%;
+        margin: 50px auto 0 auto;
+    }
+
+    .mobile-nav-list {
+        display: block;
+        width: 100%;
+        list-style: none;
+        color: #fff;
+        line-height: 30px;    
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    .mobile-nav-list li {
+        text-transform: uppercase;
+        border-bottom: 1px solid #fff;
+
+    }
+
+}
